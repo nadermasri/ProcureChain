@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <div className="navbar">
-        <div className="logo">SecureProcure</div>
+        <div className="logo">ProcureChain</div>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>

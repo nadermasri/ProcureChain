@@ -1,6 +1,36 @@
-in project cd 
-npx hardhat node
-npx hardhat run --network localhost scripts/deploy.js
-take this address and then replace it in app.js in src code
-then cd client
-then npm start
+Do all steps in the main directory of our project:
+
+1. download npm and truffle framework:
+
+npm install -g truffle
+
+2. initialize truffle:
+
+init truffle
+
+3. migrate:
+
+truffle migrate --reset
+
+4. deploy:
+truffle exec scripts/deploy.js --network development
+
+4. take the address displayed on cmd and replace it in the app.js code:
+
+once done save the changes of app.js code and now shift to the client directory:
+
+5. cd client
+
+6. run the app:
+
+npm run start
+
+
+Now after that you will have all the app running and contract deployed to ganache and truffle
+
+create a static project in ganache in order to always view from it and not to change address of metamask wallets always.
+
+Now you can see transactions of uploaded documents on the ganache transactions.
+
+
+To add a wallet with funds to metamask add a network connected to ganache port and url which is localhost and use it.
